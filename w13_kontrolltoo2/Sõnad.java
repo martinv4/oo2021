@@ -19,10 +19,6 @@ import java.io.FileReader;
 //graafikud 1-10 tähe pikkuste sõnade kohta. Mummukestega tähista
 //joonistele kohad, kus on läbitud veerand, pool ja kolmveerand tekstist.
 
-// Java program to count the 
-// number of charaters in a file
-
-  
 public class Sõnad {
     //teema valitud esialgu :)
     public static void main(String[] args) throws IOException{
