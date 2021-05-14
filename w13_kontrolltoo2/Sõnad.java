@@ -32,7 +32,6 @@ public class Sõnad {
     }
 
         
-    
     public int sõnadeArv = 0;
     String text;
         
@@ -41,11 +40,9 @@ public class Sõnad {
             FileInputStream testFileInputStream = new FileInputStream(testFile);
             InputStreamReader testInputStream = new InputStreamReader(testFileInputStream);
             BufferedReader testReader = new BufferedReader(testInputStream);
-                
-
+               
         while((text = testReader.readLine()) != null){
 
-        
             String[] kõikSõnad = text.split(" ");;
             for(String sõnad : kõikSõnad){
 
@@ -53,8 +50,6 @@ public class Sõnad {
                     sõnadeArv = sõnadeArv +1;
                     System.out.println(Arrays.asList(sõnad));
                     //System.out.println("test/esines sõna");
-                    
-                } else {
                     
                 }
                 //String kõikSõnad = Arrays.toString();
@@ -67,9 +62,6 @@ public class Sõnad {
             System.out.println("3tähelisi sõnu ei olnud");
         }
         
-        
         System.out.println("tekstis oli 3tähelisi sõnu kokku: " + sõnadeArv);
     }
 }
-
- 
